@@ -1,0 +1,6 @@
+ID;knowledgeBaseID;title;createdBy;createdOn;ticket_ID
+9071b81d-aaa9-404a-8d60-d89b20a2bd61;9071b81d-aaa9-404a-8d60-d89b20a2bd61;Knowledge Base 1;John Doe;2021-06-27T00:00:00Z;21f4db16-5442-4499-8fb2-819f91b32de1
+21f4db16-5442-4499-8fb2-819f91b32de1;21f4db16-5442-4499-8fb2-819f91b32de1;Knowledge Base 2;Jane Smith;2021-06-27T00:00:00Z;28399bc2-ac4a-4242-8852-748c987123cd
+28399bc2-ac4a-4242-8852-748c987123cd;28399bc2-ac4a-4242-8852-748c987123cd;Knowledge Base 3;Michael Johnson;2021-06-27T00:00:00Z;e52a4d2d-9d05-46cf-9809-f80e34cd85a5
+e52a4d2d-9d05-46cf-9809-f80e34cd85a5;e52a4d2d-9d05-46cf-9809-f80e34cd85a5;Knowledge Base 4;Emily Davis;2021-06-27T00:00:00Z;5e0aaf8c-5155-4b3a-a9d9-74c6d9aaa2c2
+5e0aaf8c-5155-4b3a-a9d9-74c6d9aaa2c2;5e0aaf8c-5155-4b3a-a9d9-74c6d9aaa2c2;Knowledge Base 5;David Wilson;2021-06-27T00:00:00Z;ccb7ea22-c44a-4ff7-bbbc-92a2e362adb1

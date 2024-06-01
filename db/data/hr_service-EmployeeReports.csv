@@ -1,0 +1,6 @@
+ID;employeeReportsID;title;createdBy;createdOn;priorityCount;statusCount;timeTaken;ticket_ID
+48ea6400-a1bf-4db7-9bff-bdda3599f476;48ea6400-a1bf-4db7-9bff-bdda3599f476;Employee Report 1;John Doe;2021-06-27T00:00:00Z;2;3;120;9a026342-0bef-4ad6-a333-62591a235275
+9a026342-0bef-4ad6-a333-62591a235275;9a026342-0bef-4ad6-a333-62591a235275;Employee Report 2;Jane Smith;2021-06-27T00:00:00Z;1;4;90;7ebfb1d1-305d-4bb6-964d-7049e9b31fac
+7ebfb1d1-305d-4bb6-964d-7049e9b31fac;7ebfb1d1-305d-4bb6-964d-7049e9b31fac;Employee Report 3;Michael Johnson;2021-06-27T00:00:00Z;3;2;150;fb24370f-ba35-43bd-85eb-60cfc0b78f92
+fb24370f-ba35-43bd-85eb-60cfc0b78f92;fb24370f-ba35-43bd-85eb-60cfc0b78f92;Employee Report 4;Emily Davis;2021-06-27T00:00:00Z;2;2;80;9a023436-7bf9-40b4-be6b-2023e4710cd5
+9a023436-7bf9-40b4-be6b-2023e4710cd5;9a023436-7bf9-40b4-be6b-2023e4710cd5;Employee Report 5;David Wilson;2021-06-27T00:00:00Z;1;1;60;aec913fb-9229-4538-b045-2eb0962bf145

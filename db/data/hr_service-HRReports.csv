@@ -1,0 +1,6 @@
+ID;hRReportsID;title;createdBy;createdOn;highPriorityCount;mediumPriorityCount;lowPriorityCount;statusCount;timeTaken;ticket_ID
+aec913fb-9229-4538-b045-2eb0962bf145;aec913fb-9229-4538-b045-2eb0962bf145;HR Report 1;Sarah Thompson;2021-06-27T00:00:00Z;2;3;1;6;180;c1e8e218-a015-4731-b200-e220d2b2fd97
+c1e8e218-a015-4731-b200-e220d2b2fd97;c1e8e218-a015-4731-b200-e220d2b2fd97;HR Report 2;Robert Brown;2021-06-27T00:00:00Z;3;2;2;7;150;f5b955ea-1b7a-4999-a062-3ce1a4fcef0d
+f5b955ea-1b7a-4999-a062-3ce1a4fcef0d;f5b955ea-1b7a-4999-a062-3ce1a4fcef0d;HR Report 3;Karen Wilson;2021-06-27T00:00:00Z;1;4;3;8;210;1b697d9c-7664-4ba8-a9b3-544195240342
+1b697d9c-7664-4ba8-a9b3-544195240342;1b697d9c-7664-4ba8-a9b3-544195240342;HR Report 4;Daniel Miller;2021-06-27T00:00:00Z;2;2;4;8;190;0d43e588-8bb2-48c7-9e01-ef456135c54d
+0d43e588-8bb2-48c7-9e01-ef456135c54d;0d43e588-8bb2-48c7-9e01-ef456135c54d;HR Report 5;Jessica Davis;2021-06-27T00:00:00Z;1;1;5;7;170;9071b81d-aaa9-404a-8d60-d89b20a2bd61

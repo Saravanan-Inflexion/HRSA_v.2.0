@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> Project Preview </title>
+    <script src="shared-config.js"></script>
+    <script src="https://ui5.sap.com/1.120.13/resources/sap-ui-core.js" 
+            id="sap-ui-bootstrap"
+            data-sap-ui-theme="sap_horizon"
+            data-sap-ui-bindingSyntax="complex" 
+            data-sap-ui-xx-bindingSyntax="complex"
+            data-sap-ui-resourceroots='{"assets": "assets"}' 
+            data-sap-ui-libs="sap.m,sap.uxap,sap.ui.layout,sap.f">
+    </script>
+    <link rel="stylesheet" href="assets/preview.css">
+</head>
+
+<body id="body" class="sapUiBody">
+    <script>
+        "use strict";
+        sap.ui.localResources("assets");
+        (function (jQuery, App, Page) {
+            sap.ui.getCore().attachInit(function () {
+                sap.ui.define([
+                    "sap/ui/core/mvc/Controller",
+                    "sap/ui/model/json/JSONModel"
+                ], function (Controller, JSONModel) {
+                    return Controller.extend("PreviewController", {
+                        onInit: function () {
+
+                            const data = {"Services":[{"ServiceName":"hr_serviceSrv","DetailsURL":"./service/hr_service/","Metadata":"./service/hr_service/$metadata","Entities":[{"Name":"Ticket","URL":"./service/hr_service/Ticket","FioriURL":"$fiori-preview/hr_serviceSrv/Ticket#preview-app"},{"Name":"Solution","URL":"./service/hr_service/Solution","FioriURL":"$fiori-preview/hr_serviceSrv/Solution#preview-app"},{"Name":"Status","URL":"./service/hr_service/Status","FioriURL":"$fiori-preview/hr_serviceSrv/Status#preview-app"},{"Name":"Priority","URL":"./service/hr_service/Priority","FioriURL":"$fiori-preview/hr_serviceSrv/Priority#preview-app"},{"Name":"MyQueue","URL":"./service/hr_service/MyQueue","FioriURL":"$fiori-preview/hr_serviceSrv/MyQueue#preview-app"},{"Name":"HRReports","URL":"./service/hr_service/HRReports","FioriURL":"$fiori-preview/hr_serviceSrv/HRReports#preview-app"},{"Name":"EmployeeReports","URL":"./service/hr_service/EmployeeReports","FioriURL":"$fiori-preview/hr_serviceSrv/EmployeeReports#preview-app"},{"Name":"KnowledgeBase","URL":"./service/hr_service/KnowledgeBase","FioriURL":"$fiori-preview/hr_serviceSrv/KnowledgeBase#preview-app"}],"EntitiesCount":8}]}
+                            this.getView().setModel(new JSONModel(data));
+                        }
+                    });
+                });
+                var oApp = new App()
+                var previewView = sap.ui.view({
+                    viewName: "assets.Preview",
+                    type: sap.ui.core.mvc.ViewType.XML
+                });
+                oApp.addPage(new Page({
+                    content: [previewView],
+                    showHeader: false
+                })).placeAt("content");
+            });
+
+        }(jQuery, sap.m.App, sap.m.Page));
+    </script>
+    <div id="content"></div>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+{
+  "_version": "1.48.0",
+  "sap.app": {
+    "id": "hrservice.MyTickets",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.13.5",
+      "toolsId": "93113c5b-bd78-4b37-b04a-3b0bc27bbbeb"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/service/hr_service/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "odataVersion": "4.0"
+        }
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "hrserviceMyTickets-display": {
+          "semanticObject": "hrserviceMyTickets",
+          "action": "display",
+          "title": "{{flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.108.7",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ushell": {},
+        "sap.fe.templates": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "hrservice.MyTickets.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "TicketList",
+          "target": "TicketList"
+        },
+        {
+          "pattern": "Ticket({key}):?query:",
+          "name": "TicketObjectPage",
+          "target": "TicketObjectPage"
+        },
+        {
+          "pattern": "Ticket({key})/solutions({key2}):?query:",
+          "name": "SolutionObjectPage",
+          "target": "SolutionObjectPage"
+        }
+      ],
+      "targets": {
+        "TicketList": {
+          "type": "Component",
+          "id": "TicketList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/Ticket",
+              "variantManagement": "Page",
+              "navigation": {
+                "Ticket": {
+                  "detail": {
+                    "route": "TicketObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "TicketObjectPage": {
+          "type": "Component",
+          "id": "TicketObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/Ticket",
+              "navigation": {
+                "solutions": {
+                  "detail": {
+                    "route": "SolutionObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SolutionObjectPage": {
+          "type": "Component",
+          "id": "SolutionObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/Ticket/solutions"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  }
+}

@@ -1,0 +1,6 @@
+ID;ticketID;title;description;priority;reportedBy;createdOn;closedOn;responder;status_ID
+9a026342-0bef-4ad6-a333-62591a235275;9a026342-0bef-4ad6-a333-62591a235275;Ticket 1;This is ticket 1.;High;John Doe;2021-06-27T00:00:00Z;2021-06-28T00:00:00Z;Sarah Thompson;940167b0-9d62-4e1e-bf98-3e91d387bfdb
+7ebfb1d1-305d-4bb6-964d-7049e9b31fac;7ebfb1d1-305d-4bb6-964d-7049e9b31fac;Ticket 2;This is ticket 2.;Medium;Jane Smith;2021-06-27T00:00:00Z;;Robert Brown;eec3a049-8cb1-4698-b463-d71a9c6117db
+fb24370f-ba35-43bd-85eb-60cfc0b78f92;fb24370f-ba35-43bd-85eb-60cfc0b78f92;Ticket 3;This is ticket 3.;Low;Michael Johnson;2021-06-27T00:00:00Z;;Karen Wilson;bb4cf11c-96ec-47de-82d1-af6ff37ebd7b
+9a023436-7bf9-40b4-be6b-2023e4710cd5;9a023436-7bf9-40b4-be6b-2023e4710cd5;Ticket 4;This is ticket 4.;High;Emily Davis;2021-06-27T00:00:00Z;;Daniel Miller;6bfdc15c-190a-4b8a-8c94-99322f23dedc
+aec913fb-9229-4538-b045-2eb0962bf145;aec913fb-9229-4538-b045-2eb0962bf145;Ticket 5;This is ticket 5.;Medium;David Wilson;2021-06-27T00:00:00Z;;Jessica Davis;9e315f69-8a65-41d7-84f8-58c378b91187
